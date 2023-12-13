@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herzog & de Meuron Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .project {
+            width: 300px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Herzog & de Meuron Projects</h1>
+    </header>
+
+    <nav>
+        <a href="#">All Projects</a>
+        <a href="#">Residential</a>
+        <a href="#">Commercial</a>
+        <a href="#">Cultural</a>
+    </nav>
+
+    <section class="projects-container">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-info">
+                <h2>Project 1</h2>
+                <p>Description of Project 1.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-info">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+
+        <!-- Add more project items as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Herzog & de Meuron. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
